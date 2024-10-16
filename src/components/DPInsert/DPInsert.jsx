@@ -5,7 +5,7 @@ import TextArea from "./TextAreaa";
 
 const DPInsert = () => {
   return (
-    <WrapperComponent>
+    <WrapperComponent width="w-[698px]" height="h-[780px]">
       <div className="flex justify-start my-4">
         <button className="font-sourceSans leading-20.11 text-base text-textlight px-2 py-2 bg-[#19212B] rounded">
           Insert creator name <span className="bg-bgInputFeild ">|</span>

@@ -33,7 +33,7 @@ const SummerPromotion = () => {
   ];
 
   return (
-    <WrapperComponent>
+    <WrapperComponent width="w-[638px]" height="h-[780px]">
       <div>
         <p className="mb-4 text-white font-sourceSans text-[18px] font-semibold leading-[22.63px]">
           Review the promotion duplication
