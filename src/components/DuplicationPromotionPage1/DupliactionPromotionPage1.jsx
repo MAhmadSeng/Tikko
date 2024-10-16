@@ -47,7 +47,7 @@ const DuplicatePromotionPage1 = () => {
           ))}
         </ul>
       </div>
-      <div className="mt-16">
+      <div>
         <ButtonNext btnName="Next" bg="bg-[#00BCD3]" textColor="text-black" />
       </div>
     </WrapperComponent>

@@ -25,7 +25,7 @@ const DuplicationPage2 = () => {
       <div className="flex items-center gap-2">
         <input
           type="checkbox"
-          className="w-[20px] h-[20px] rounded-lg shadow-sm border border-[#FFFFFF] bg-transparent  appearance-none checked:bg-blue-700 checked:border-transparent"
+          className="w-[20px] h-[20px] rounded-[5px] shadow-sm border border-[#FFFFFF] bg-transparent  appearance-none checked:bg-blue-700 checked:border-transparent"
         />
         <p className="text-base font-normal font-sourceSans leading-[20.11px] text-[#EFF0F1]">
           Send automated message to your affiliated who are promoting the
