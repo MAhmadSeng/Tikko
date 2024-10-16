@@ -23,7 +23,7 @@ const DuplicatePromotionPage1 = () => {
   };
 
   return (
-    <WrapperComponent  width="w-[698px]" height="h-[780px]">
+    <WrapperComponent  width="md:w-[500px] lg:w-[698px] w-[698px]" height="h-[780px]">
       <div>
         <InputFeild />
 

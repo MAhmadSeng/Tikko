@@ -22,8 +22,8 @@ const PromotionList = ({ promotions }) => {
         <div className="mt-2">
           {promotions.map((promotion, index) => (
             <div key={index} className="flex justify-between mb-2">
-              <p className="font-normal text-base leading-[20.11px] font-sourceSans">{promotion.name}</p>
-              <p className="text-right">{promotion.date} | {promotion.time}</p>
+              <p className="font-normal lg:text-base  text-base leading-[20.11px] font-sourceSans sm:text-sm">{promotion.name}</p>
+              <p className="font-normal lg:text-base  text-base leading-[20.11px] font-sourceSans sm:text-sm">{promotion.date} | {promotion.time}</p>
             </div>
           ))}
         </div>

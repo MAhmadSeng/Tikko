@@ -7,7 +7,7 @@ import IntervalFeild from "../DuplicationPage2/IntervalFeild";
 
 const DuplicationPage2 = () => {
   return (
-    <WrapperComponent width="w-[698px]" height="h-[780px]">
+    <WrapperComponent  width="md:w-[500px] lg:w-[698px] w-[698px]" height="h-[780px]">
       <div>
         <p className="mb-1 text-white font-sourceSans text-[18px] font-semibold leading-[22.63px]">
           Customize Recurrence
