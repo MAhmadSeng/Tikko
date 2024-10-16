@@ -1,11 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* /Dummy bg color add */
 body{
     background-color:  rgb(78, 78, 78);
 }
 /*custom styles for react-datepickerpositioning*/
 .react-datepicker {
     left: 5.5rem !important;
+    display: flex;
   }
   
