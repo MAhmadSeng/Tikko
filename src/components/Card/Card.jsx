@@ -3,7 +3,7 @@ import React from "react";
 const Card = ({
   height,
   width,
-  imgSrc,
+  ImgSrc,
   title,
   subtitle,
   messageLoader,
@@ -15,7 +15,8 @@ const Card = ({
       className={`h-[${height}] w-[${width}] max-w-md p-[30px] rounded-[20px] mx-auto my-4 shadow-lg bg-[#000914]`}
     >
       <div className="flex justify-center mb-4">
-        <img src={imgSrc} alt="Logo" className="w-[100px] h-[100px]" />
+        {/* <img src={imgSrc} alt="Logo" className="w-[100px] h-[100px]" /> */}
+        {ImgSrc}
       </div>
       <h2
         className="text-[32px] font-Family/Oswald text-white leading-[

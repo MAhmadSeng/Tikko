@@ -1,7 +1,7 @@
-
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLayerGroup } from "@fortawesome/free-solid-svg-icons";
+import Input from "../Input/Input";
 
 const PromotionItem = ({ promotion, isSelected, onSelect }) => {
   return (
@@ -17,10 +17,10 @@ const PromotionItem = ({ promotion, isSelected, onSelect }) => {
           {promotion.name} ({promotion.id})
         </span>
       </div>
-      <input
+      <Input
         type="radio"
-        checked={isSelected}
         onChange={onSelect}
+        checked={isSelected}
         className="w-[20px] h-[20px] rounded-sm shadow-sm border border-[#FFFFFF] bg-transparent checked:bg-blue-700 checked:border-transparent"
       />
     </li>

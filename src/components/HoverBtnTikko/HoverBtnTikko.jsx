@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const HoverBtn = ({ btnName, bg, textColor, border, borderColor, icon }) => {
+const HoverBtn = ({ btnName, bg, textColor, border, borderColor, ImageSrc }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -12,11 +12,14 @@ const HoverBtn = ({ btnName, bg, textColor, border, borderColor, icon }) => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <img
-          src={icon}
+      <div className="transition-all duration-800 object-cover ml-4 w-[24px] h-[24px]">
+          {ImageSrc}
+        </div>
+        {/* <img
+          src={ImageSrc}
           alt="icon"
          className="transition-all duration-800 object-cover ml-4 w-[24px] h-[24px]"
-        />
+        /> */}
 
         <span
           className={`whitespace-nowrap font-normal px-2 text-base leading-[22.63px] transition-transform duration-300 

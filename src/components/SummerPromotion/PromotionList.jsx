@@ -20,8 +20,8 @@ const PromotionList = ({ promotions }) => {
 
       {isOpen && (
         <div className="mt-2">
-          {promotions.map((promotion, index) => (
-            <div key={index} className="flex justify-between mb-2">
+          {promotions.map((promotion) => (
+            <div key={promotion.id} className="flex justify-between mb-2">
               <p className="font-normal lg:text-base  text-base leading-[20.11px] font-sourceSans sm:text-sm">{promotion.name}</p>
               <p className="font-normal lg:text-base  text-base leading-[20.11px] font-sourceSans sm:text-sm">{promotion.date} | {promotion.time}</p>
             </div>

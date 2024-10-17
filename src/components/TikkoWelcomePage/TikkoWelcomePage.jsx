@@ -3,7 +3,7 @@ import TitleAndHeading from "../TikkoWelcomePage/FormHeader";
 import CommonButton from "../TikkoWelcomePage/CommonButton";
 import FormRoute from "../TikkoWelcomePage/FormRoute";
 import FormLogo from "../TikkoWelcomePage/FormLogo";
-import tiktoklogo from '../../../public/Images/tikkoBlackLogo.png'
+import TikkoBlackLogo from '../../../public/Images/TikkoBlackLogo'
 
 const TikkoWelcomePage = () => {
   return (
@@ -22,8 +22,8 @@ const TikkoWelcomePage = () => {
           </div>
           <div className="flex flex-col w-full mb-4 gap-4">
             <CommonButton
-              icon={tiktoklogo}
-              iconAlt="Tikko"
+              ImageSrc={<TikkoBlackLogo/>}
+              ImageAlt="Tikko"
               text="TikTok"
               textColor="#151718"
               bgColor="#00BCD3"

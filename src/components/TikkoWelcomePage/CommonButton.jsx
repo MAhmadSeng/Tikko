@@ -1,6 +1,6 @@
 import React from "react";
 
-const CommonButton = ({ text, textColor, bgColor, borderColor, borderRadius, icon, width, height, iconAlt, lineHeight}) => {
+const CommonButton = ({ text, textColor, bgColor, borderColor, borderRadius, ImageSrc, width, height, ImageAlt, lineHeight}) => {
   return (
     <button
       className={` ${width} ${height}font-sourceSans font-semibold text-base border leading-[19.5px] text-center
@@ -10,8 +10,13 @@ const CommonButton = ({ text, textColor, bgColor, borderColor, borderRadius, ico
          ${lineHeight ? `leading-[${lineHeight}]` : "leading-[19.5px]"}
         ${borderRadius} p-[15px] flex justify-center items-center gap-2`}
     >
-      {icon && (
-        <img src={icon} alt={iconAlt} className="h-[24px] w-[24px]" />
+      {/* {ImageSrc && (
+        <img src={ImageSrc} alt={ImageAlt} className="h-[24px] w-[24px]" />
+      )} */}
+      {ImageSrc && (
+        <div className="h-[24px] w-[24px]">
+          {ImageSrc} 
+        </div>
       )}
       {text}
     </button>

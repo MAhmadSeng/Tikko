@@ -1,6 +1,6 @@
 import React from "react";
 import WrapperComponent from "../DuplicationPromotionPage1/WrapperPromotion";
-import ButtonNext from "../DuplicationPromotionPage1/ButtonNext";
+import Button from "../DuplicationPromotionPage1/ButtonNext";
 import PromotionList from "../SummerPromotion/PromotionList";
 import ProductList from "../SummerPromotion/ProductList";
 
@@ -65,18 +65,27 @@ const SummerPromotion = () => {
         <ProductList products={products} />
       </div>
       <div className="flex justify-end gap-2 mt-16">
-        <ButtonNext
+      
+      <Button 
+        text="Back"
+        className="bg-[#000914] text-[#EFF0F1] border-[#71717147] border"
+      />
+       <Button 
+        text="Publish"
+        className="bg-[#00BCD3] text-black"
+      />
+        {/* <Button
           btnName="Back"
           bg="bg-[#000914]"
           textColor="text-[#EFF0F1]"
           bordercolor="border-[#71717147]"
           border="border"
         />
-        <ButtonNext
+        <Button
           btnName="Publish"
           bg="bg-[#00BCD3]"
           textColor="text-black"
-        />
+        /> */}
       </div>
     </WrapperComponent>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../Card/Card";
+import PartyPopper from '../../../public/Images/PartyPopper'
 
 function CongratulationProm() {
   return (
@@ -7,7 +8,10 @@ function CongratulationProm() {
       <Card
      height="300px"
       width="386px"
-      imgSrc="../../../public/Images/party-popper.png"
+      // ImgSrc="../../../public/Images/party-popper.png"
+      ImgSrc={
+        <PartyPopper/>
+      }
       title="Congratulations"
       subtitle="Promotion is duplicated successfully"
       messageCongrat="You just sent messages to 125 affiliates to promote your selected product(s)."

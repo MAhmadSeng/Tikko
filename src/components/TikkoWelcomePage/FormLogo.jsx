@@ -1,13 +1,10 @@
 import React from "react";
+import FormLogoTikko from "../../../public/Images/FormLogoTikko";
 
 const FormLogo = () => {
   return (
     <div className="mb-[40px]">
-      <img
-        src="/public/Images/formLogoTikko.png"
-        alt="Tikko Logo"
-        className="w-[275px] h-[121px] mx-auto "
-      />
+      <FormLogoTikko className="w-[275px] h-[121px] mx-auto" alt="Tikko Logo" />
     </div>
   );
 };

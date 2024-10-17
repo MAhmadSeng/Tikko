@@ -1,20 +1,26 @@
-import React from 'react';
+import React from "react";
 
-const ButtonNext = ({btnName, bg, textColor,  border, bordercolor, icon, width, height , }) => {
+const Button = ({
+  text = "",
+  className = "",
+  Img,
+  onClick = () => {},
+  onChange = () => {},
+}) => {
+  const defaultStyle =
+    "bg-[#000914] text-[#EFF0F1] border border-[#71717147] flex items-center justify-center font-sourceSans font-bold text-[16px] rounded-full px-[30px] w-[93px] h-[40px]";
   return (
     <div className="flex justify-end mt-4">
-      <button className={`${bg} ${textColor} ${border} ${bordercolor} flex items-center justify-center font-sourceSans font-bold text-[16px] rounded-full px-[30px] w-[93px] h-[40px]`}>
-      {icon && <img src={icon} alt="icon" className="mr-2 h-5 w-5" />} 
-        {btnName}
+      <button
+        onClick={onClick}
+        onChange={onChange}
+        className={`${defaultStyle} ${className}`}
+      >
+        {Img && <img src={icon} alt="icon" className="mr-2 h-5 w-5" />}
+        {text}
       </button>
     </div>
   );
 };
 
-export default ButtonNext;
-
-
-
-
-
-
+export default Button;

@@ -1,15 +1,18 @@
 import React from "react";
 import WrapperComponent from "../DuplicationPromotionPage1/WrapperPromotion";
-import ButtonNext from "../DuplicationPromotionPage1/ButtonNext";
+import Button from "../DuplicationPromotionPage1/ButtonNext";
 import TextArea from "./TextAreaa";
 
 const DPInsert = () => {
   return (
-    <WrapperComponent  width="md:w-[500px] lg:w-[698px] w-[698px]" height="h-[780px]">
+    <WrapperComponent
+      width="md:w-[500px] lg:w-[698px] w-[698px]"
+      height="h-[780px]"
+    >
       <div className="flex justify-start my-4">
-        <button className="font-sourceSans leading-20.11 text-base text-textlight px-2 py-2 bg-[#19212B] rounded">
-          Insert creator name <span className="bg-bgInputFeild ">|</span>
-        </button>
+        <div className="font-sourceSans leading-20.11 text-base text-textlight px-2 py-2 bg-[#19212B] rounded">
+          Insert creator name <span className="bg-bgInputFeild">|</span>
+        </div>
       </div>
       <TextArea
         label="Reminder message"
@@ -33,14 +36,11 @@ Don't forget to share your affiliate link to maximize your sales!"
       />
 
       <div className="flex justify-end gap-2 mt-16 flex-wrap ">
-        <ButtonNext
-          btnName="Back"
-          bg="bg-bgmain"
-          textColor="text-textlight"
-          bordercolor="border-[#71717147]"
-          border="border"
+        <Button
+          text="Back"
+          className="bg-[#000914] text-[#EFF0F1] border-[#71717147] border"
         />
-        <ButtonNext btnName="Next" bg="bg-[#00BCD3]" textColor="text-black" />
+        <Button text="Publish" className="bg-[#00BCD3] text-black" />
       </div>
     </WrapperComponent>
   );

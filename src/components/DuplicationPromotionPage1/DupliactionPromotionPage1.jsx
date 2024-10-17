@@ -1,9 +1,8 @@
-
 import React, { useState } from "react";
 import WrapperComponent from "../DuplicationPromotionPage1/WrapperPromotion";
-import InputFeild from "../DuplicationPromotionPage1/InputFeild";
+import Input from "../DuplicationPromotionPage1/InputFeild";
 import PromotionItem from "../DuplicationPromotionPage1/PromotionList";
-import ButtonNext from "../DuplicationPromotionPage1/ButtonNext";
+import Button from "../DuplicationPromotionPage1/ButtonNext";
 
 const DuplicatePromotionPage1 = () => {
   const [selectedPromotionId, setSelectedPromotionId] = useState(null);
@@ -18,14 +17,17 @@ const DuplicatePromotionPage1 = () => {
   ];
 
   const handleSelect = (id) => {
-    console.log("Id No", selectedPromotionId)
     setSelectedPromotionId(id);
   };
 
   return (
-    <WrapperComponent  width="md:w-[500px] lg:w-[698px] w-[698px]" height="h-[780px]">
+    <WrapperComponent
+      width="md:w-[500px] lg:w-[698px] w-[698px]"
+      height="h-[780px]"
+    >
       <div>
-        <InputFeild />
+        {/* <InputFeild inputValue={inputValue} setInputValue={setInputValue} /> */}
+        <Input className="rounded pl-10 pr-4 py-2 w-full text-textdark bg-bgInputFeild text-base font-sourceSans font-normal leading-[20.11px]" />
 
         <p className="mb-1 text-white font-sourceSans text-[18px] font-semibold leading-[22.63px]">
           Your Promotions
@@ -48,7 +50,7 @@ const DuplicatePromotionPage1 = () => {
         </ul>
       </div>
       <div>
-        <ButtonNext btnName="Next" bg="bg-[#00BCD3]" textColor="text-black" />
+        <Button text="Next" className="bg-[#00BCD3] text-black" />
       </div>
     </WrapperComponent>
   );

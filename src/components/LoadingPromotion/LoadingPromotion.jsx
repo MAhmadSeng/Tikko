@@ -1,12 +1,16 @@
 import React from "react";
 import Card from "../Card/Card"; 
+import Image18 from "../../../public/Images/Image18";
 
 function LoaderPromotion() {
   return (
     <Card
      height="355px"
       width="400px"
-      imgSrc="../../../public/Images/image 18.png"
+      // imgSrc="../../../public/Images/image 18.png"
+      ImgSrc={
+      <Image18/>
+      }
       title="Duplicate Promotions"
       messageLoader="Please wait while we are sending messages to affiliates"
     >
